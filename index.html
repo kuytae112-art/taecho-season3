@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07101a">
+  <meta name="description" content="태초 동맹 시즌 3 출정 준비 가이드">
+  <title>태초 시즌 3 · 출정 준비</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="mobile-header">
+    <button class="icon-btn" id="menuBtn" aria-label="목차 열기">☰</button>
+    <div class="mobile-title">
+      <strong>태초 동맹</strong>
+      <span>시즌 3 출정 준비</span>
+    </div>
+    <button class="icon-btn" id="mobileZoomBtn" aria-label="확대 보기">⌕</button>
+  </header>
+
+  <div class="scrim" id="scrim"></div>
+
+  <aside class="sidebar" id="sidebar" aria-label="주제 목차">
+    <div class="brand">
+      <div class="brand-kicker">태초 동맹</div>
+      <div class="brand-title">시즌 3<br>출정 준비</div>
+      <div class="brand-date">2026.09.29 · 47장</div>
+    </div>
+
+    <div class="side-actions">
+      <button id="firstBtn">처음</button>
+      <button id="fullscreenBtn">전체화면</button>
+    </div>
+
+    <nav id="nav"></nav>
+
+    <div class="side-help">
+      <b>빠른 사용</b>
+      <span>← → 페이지 이동</span>
+      <span>휴대폰은 좌우 스와이프</span>
+      <span>슬라이드 탭 → 확대</span>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div class="crumb-wrap">
+        <span class="section-dot"></span>
+        <div>
+          <div class="section-name" id="sectionName">전체 가이드</div>
+          <div class="slide-title" id="slideTitle">시즌 3 출정 준비</div>
+        </div>
+      </div>
+      <div class="counter"><b id="current">1</b><span>/ 47</span></div>
+    </div>
+
+    <section class="viewer" id="viewer">
+      <button class="arrow prev" id="prevBtn" aria-label="이전 슬라이드">‹</button>
+
+      <div class="slide-wrap" id="slideWrap" tabindex="0" aria-label="슬라이드 보기">
+        <img id="slideImage" src="slides/slide-01.jpg" alt="1 / 47">
+        <div class="tap-hint">탭하여 크게 보기</div>
+      </div>
+
+      <button class="arrow next" id="nextBtn" aria-label="다음 슬라이드">›</button>
+    </section>
+
+    <div class="bottom-controls">
+      <button class="page-btn" id="prevBottom">← 이전</button>
+      <div class="progress-area">
+        <div class="progress"><div id="progressBar"></div></div>
+        <div class="progress-label" id="progressLabel">1 / 47</div>
+      </div>
+      <button class="page-btn" id="nextBottom">다음 →</button>
+    </div>
+
+    <div class="mobile-bottom">
+      <button id="mobilePrev">‹<span>이전</span></button>
+      <button id="mobileContents">☰<span>목차</span></button>
+      <button id="mobileNext"><span>다음</span>›</button>
+    </div>
+
+    <div class="hint">
+      <span>키보드</span> <kbd>←</kbd> <kbd>→</kbd>
+      <span class="sep">·</span>
+      <span>휴대폰은 좌우 스와이프</span>
+      <span class="sep">·</span>
+      <span>슬라이드 탭으로 확대</span>
+    </div>
+  </main>
+
+  <div class="zoom-modal" id="zoomModal" aria-hidden="true">
+    <div class="zoom-toolbar">
+      <button id="zoomClose">닫기</button>
+      <div><span id="zoomCurrent">1</span> / 47</div>
+      <button id="zoomFit">화면에 맞춤</button>
+    </div>
+    <div class="zoom-stage" id="zoomStage">
+      <img id="zoomImage" src="slides/slide-01.jpg" alt="">
+    </div>
+    <button class="zoom-arrow zoom-prev" id="zoomPrev" aria-label="이전 슬라이드">‹</button>
+    <button class="zoom-arrow zoom-next" id="zoomNext" aria-label="다음 슬라이드">›</button>
+    <div class="zoom-help">두 손가락으로 확대/축소 · 드래그로 이동 · 좌우 스와이프</div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
